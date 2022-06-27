@@ -1,24 +1,14 @@
 import 'package:flutter/material.dart';
 
-const age = 27;
-const twiceTheAge = age * 2;
-
-String getFullName(String firstName, String lastName) => '$firstName $lastName';
-
 void main() {
   runApp(const MyApp());
 }
 
 void test() {
-  const name = 'Foo';
-
-  if (name == 'Foo') {
-    print('Yes this is foo');
-  } else if (name == 'Bar') {
-    print('This is Bar');
-  } else {
-    print('No this is not foo');
-  }
+  var names = ['Foo', 'Bar', 'Baz'];
+  var length = names.length;
+  names.add('My name');
+  print(length);
 }
 
 class MyApp extends StatelessWidget {
@@ -27,7 +17,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(getFullName("Mateus", "Gonçalves"));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
