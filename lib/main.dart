@@ -5,18 +5,17 @@ void main() {
 }
 
 void test() {
-  var names = ['Foo', 'Bar', 'Baz'];
-  var length = names.length;
-  names.add('My name');
-  print(length);
+  var names = {'foo', 'bar', 'baz'};
+  names.add('fee');
+  print(names);
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
