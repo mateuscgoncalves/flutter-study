@@ -5,9 +5,10 @@ void main() {
 }
 
 void test() {
-  var names = {'foo', 'bar', 'baz'};
-  names.add('fee');
-  print(names);
+  var person = {'age': 20, 'name': 'Foo'};
+  print(person);
+  person['name'] = 'Fooo';
+  print(person);
 }
 
 class MyApp extends StatelessWidget {
